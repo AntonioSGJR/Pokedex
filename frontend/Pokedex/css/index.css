@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium&family=Press+Start+2P&family=Russo+One&display=swap');
+
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Russo One", sans-serif;
+  font-size: clamp(2px, 1.3vw, 16px);
+}
+
+main
+{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px;
+  position: relative;
+}
+
+body
+{
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../assets/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.pokedex
+{
+  width: min(100%, 900px);
+
+}
+
+.pokemonImageBackground
+{
+  position: absolute;
+  top: 35%;
+  right: 63%;
+  bottom: 42.5%;
+  left: 13.8%;
+  
+}
+
+.pokemonImage
+{
+  height: 100%;
+}
+
+.pokemonNameId
+{
+  position: absolute;
+  top: 61.5%;
+  left: 12.2%;
+  right: 57%;
+  bottom: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000037;
+  border-radius: 30px;
+  box-shadow: inset 2px 2px 0 #8b8b85, inset -1px -1px 0 #8b8b85;
+}
+
+.pokemonNameId h1, .pokemonID, .pokemonName
+{
+  font-size: clamp(2px, 2vw, 23px);
+  text-transform: capitalize;
+}
+
+.searchForm
+{
+  position: absolute;
+  bottom: 22.5%;
+  left: 7.5%;
+  top: 71%;
+  right: 55.2%;
+  display: flex;
+  flex-direction: row;
+}
+
+.searchInput
+{
+  outline: none;
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  border-radius: 30px 0px 0px 30px;
+  color: black;
+  background-color: #e3e3e2;
+  border-color: #7d7c7b;
+  font-weight: 600;
+  box-shadow: -3px 4px 0 #7d7c7b, -5px 5.8px 0 black, 0px 4px 0 #7d7c7b, 0px 5.5px black;
+  border: none;
+  border-right: 1px solid black;
+}
+
+.searchButton
+{
+  width: 40%;
+  height: 100%;
+  border: none;
+  border-radius: 0px 30px 30px 0px;
+  background-color: #e3e3e2;
+  box-shadow: 0px 4px 0 #7d7c7b, 0px 5.8px 0 black;
+  border-left: 0.5px solid black;
+  cursor: pointer;
+  transition: all 3ms;
+}
+
+.searchButton img
+{
+  width: min(100%, 20px);
+}
+
+.searchButton:active
+{
+  box-shadow: none;
+  transform: translate(4px, 5.5px);
+}
+
+.buttons
+{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  bottom: 12%;
+  left: 7.5%;
+  top: 80.5%;
+  right: 55.2%;
+  gap: 1.8%;
+}
+
+.soundButton, .nextButton, .previousButton
+{
+  width: 100%;
+  height: 100%;
+  color: black;
+  background-color: #00e961;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.previousButton
+{
+  border-radius: 30px 0px 0px 30px;
+  border: none;
+  background: radial-gradient(circle at 156px 26px, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), #00e961, #00e961, #00e961 40px,  #00e961 30px);
+  box-shadow: -3px 4px 0 #037834, -5px 6px 0 black, 0 4px 0 #037834, 0px 6px 0 black;
+  transition: all 3ms ;
+}
+
+.previousButton:active
+{
+  transform: translateY(6px);
+  box-shadow: none;
+  background: radial-gradient(circle at 151px 26px, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 40px,  #00e961 30px);
+}
+
+.previousButton img
+{
+  transform: translate(0px, 2px);
+}
+
+.soundButton
+{
+  transform: translate(2.5px, 0px);
+  width: 50%;
+  border: none;
+  border-radius: 50%;
+  box-shadow: -3px 4px 0 #037834, -5px 8px 0 black, 0 4px 0 #037834, 0px 6px 0 black;
+  transition: all 3ms;
+}
+
+.soundButton:active
+{
+  transform: translate(-5px, 6px);
+  box-shadow: none;
+
+}
+
+.soundButton img
+{
+  transform: translate(0px, 2px);
+}
+
+.nextButton
+{
+  border-radius: 0px 30px 30px 0px; 
+  background: radial-gradient(circle at -27px 26px, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), #037834, #037834 40px,  #00e961 30px);
+  border: none;
+  box-shadow: 0px 4px 0 #037834, 0px 6px 0 black;
+  transition: all 3ms ;
+}
+
+.nextButton:active
+{
+  transform: translate(-2px, 6px);
+  box-shadow: none;
+  background: radial-gradient(circle at -27px 26px, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 40px,  #00e961 30px);
+}
+
+.nextButton img
+{
+  transform: translate(0px, 2px) rotate(180deg);
+}
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="../assets/favicon/favicon-16x16.png">
+  <link rel="stylesheet" href="../css/index.css">
+  <script src="../javascript/index.js" defer></script>
+
+  <title>Pokedex</title>
+</head>
+<body>
+  <main>
+    <img src="../assets/pokedex.png" alt="Pokedex" class="pokedex"/>
+ 
+    <div class="pokemonImageBackground">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif" alt="pokemon" class="pokemonImage" />
+    </div>
+
+    <div class="pokemonNameId">
+      <h1>Nº <span class="pokemonID">01</span> - <span class="pokemonName">Bulbasaur</span></h1>
+    </div>
+
+    <form class="searchForm" >
+
+      <input 
+      type="search"
+      placeholder="Type number or name"
+      class="searchInput"
+      required
+      >
+      <button type="submit" class="searchButton"><img src="../assets/magnifying-glass.png" alt=""></button>
+
+    </form>
+
+    <div class="buttons">
+      <button class="previousButton" onclick="previousPokemon()"><img src="../assets/left.png" alt=""></button>
+
+      <button onclick="playPokemonCry()" class="soundButton">
+        <img src="../assets/speaker-filled-audio-tool.png" alt="">
+      </button>
+
+      <button class="nextButton" onclick="nextPokemon()"><img src="../assets/left.png" alt=""></button>
+    </div>
+
+
+    <img src="" alt="" class="pokemonImage">
+  </main>
+  
+</body>
+</html>
